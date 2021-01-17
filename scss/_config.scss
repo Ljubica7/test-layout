@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+$nav-font-family: "Roboto Condensed", Arial;
+$primary-font-family: "Roboto", Arial;
+
+@mixin set-text-decoration($font, $transorm, $color) {
+  font: $font;
+  text-transform: $transorm;
+  color: $color;
+}
+
+@mixin set-button-anim($left) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: $left;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 6.7em;
+    background-color: #fc6868;
+    transition: transform 2s ease-in-out;
+    transform: scaleX(0);
+  }
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}

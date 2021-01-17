@@ -1,0 +1,40 @@
+%btn {
+  border: none;
+  border-radius: 33px;
+  padding: 0.5em 1em;
+  margin: 1.2em 0.1em;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+.btn-1 {
+  @extend %btn;
+  background-color: #b1bdfa;
+  @include set-text-decoration(
+    400 14px $primary-font-family,
+    lowercase,
+    #2243f1
+  );
+}
+.btn-2 {
+  @extend %btn;
+  background-color: #b1e4fa;
+  @include set-text-decoration(
+    400 14px $primary-font-family,
+    lowercase,
+    #0d94cf
+  );
+}
+.btn-3 {
+  @extend %btn;
+  background-color: #b2fae5;
+  @include set-text-decoration(
+    400 14px $primary-font-family,
+    lowercase,
+    #099068
+  );
+}

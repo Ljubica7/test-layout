@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1260px) {
+  .container .hero .searchbox .searchbar input {
+    max-width: 14em;
+  }
+  .container .hero .searchbox .searchbar .label-category {
+    left: 47% !important;
+  }
+  .featured .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .container .hero {
+    padding-left: 1em !important;
+    padding-right: 2em !important;
+  }
+
+  .container .hero .searchbox .scroll-down {
+    display: none;
+  }
+  .container .hero .content .social {
+    padding-top: 10em !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container .hero .searchbox .searchbar select,
+  .container .hero .searchbox .searchbar .label-category {
+    display: none;
+  }
+
+  .featured .cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .container .hero .content .social {
+    display: none;
+  }
+  .container .hero {
+    padding-top: 6em !important;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .container header .logo {
+    font-size: 15px !important;
+  }
+  .container header .auth .register-btn {
+    border: none !important;
+    // padding: 0 !important;
+  }
+  .container .hero {
+    padding-top: 1em !important;
+  }
+  .featured .cards {
+    padding: 0 1em !important;
+  }
+  .container .hero .searchbox .searchbar input {
+    max-width: 10em;
+  }
+  .container .hero .searchbox .searchbar button {
+    max-width: 4em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container .hero .content .title h1 {
+    font-size: 42px !important;
+  }
+  .container .hero .searchbox .searchbar button {
+    display: none;
+  }
+  .container .hero .searchbox .searchbar input {
+    max-width: 12em;
+    border-top-right-radius: 22px;
+  }
+}
