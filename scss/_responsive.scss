@@ -47,7 +47,9 @@
   }
   .container header .auth .register-btn {
     border: none !important;
-    // padding: 0 !important;
+  }
+  .container header .auth .register-btn:hover {
+    background-color: transparent !important;
   }
   .container .hero {
     padding-top: 1em !important;
