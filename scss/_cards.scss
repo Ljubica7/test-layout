@@ -5,12 +5,12 @@
   background-color: #fff;
   border-radius: 8px;
   z-index: 123;
-  transition: 0.7s;
+  transition: 0.4s;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.07);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 

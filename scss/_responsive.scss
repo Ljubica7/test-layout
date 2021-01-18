@@ -33,8 +33,8 @@
   .featured .cards {
     grid-template-columns: repeat(1, 1fr) !important;
   }
-  .container .hero .content .social {
-    display: none;
+  .container .hero .content .title {
+    padding-top: 0 !important;
   }
   .container .hero {
     padding-top: 6em !important;
@@ -43,7 +43,10 @@
 
 @media only screen and (max-width: 670px) {
   .container header .logo {
-    font-size: 15px !important;
+    font-size: 12px !important;
+  }
+  .container .hero .content .title {
+    padding-top: 0 !important;
   }
   .container header .auth .register-btn {
     border: none !important;
@@ -52,7 +55,7 @@
     background-color: transparent !important;
   }
   .container .hero {
-    padding-top: 1em !important;
+    padding-top: 0em !important;
   }
   .featured .cards {
     padding: 0 1em !important;
