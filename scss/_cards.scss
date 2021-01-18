@@ -1,0 +1,144 @@
+%card {
+  position: relative;
+  box-shadow: 0px 24px 43px rgba(232, 229, 255, 0.6);
+  padding-bottom: 1em;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: 123;
+  transition: 1s;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  .card-body {
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        padding-left: 1em;
+        @include set-text-decoration(
+          400 19px $primary-font-family,
+          capitalize,
+          #1a1636
+        );
+      }
+      svg {
+        padding-top: 1em;
+        padding-right: 1em;
+      }
+    }
+
+    .location {
+      background-image: url(/images/location.svg);
+      background-repeat: no-repeat;
+      background-position: center left 1em;
+      padding-left: 2em;
+      @include set-text-decoration(
+        400 14px $primary-font-family,
+        capitalize,
+        #9892c0
+      );
+    }
+
+    .card-tags {
+      margin-left: 0.8em;
+    }
+    .read-more-link {
+      padding: 1em;
+      background-image: url(/images/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom 1.2em;
+      @include set-text-decoration(
+        700 16px $primary-font-family,
+        capitalize,
+        #39317c
+      );
+    }
+  }
+}
+
+.card-1 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 0.5;
+    }
+  }
+}
+.card-2 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 0.8;
+      filter: grayscale(100%);
+    }
+  }
+}
+.card-3 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 0.8;
+      filter: sepia(100%);
+    }
+  }
+}
+.card-4 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 0.6;
+      filter: grayscale(100%);
+    }
+  }
+}
+.card-5 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 0.6;
+      filter: saturate(8);
+    }
+  }
+}
+.card-6 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      opacity: 0.6;
+      filter: hue-rotate(90deg);
+    }
+  }
+}
+.card-7 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+}
+.card-8 {
+  @extend %card;
+  .gradient {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      filter: grayscale(100%);
+    }
+  }
+}
